@@ -1,0 +1,22 @@
+{
+  "name": "jekyll-big-picture",
+  "version": "11.11.11",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jekyll5UP/jekyll-big-picture.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jekyll5UP/jekyll-big-picture/issues"
+  },
+  "homepage": "https://github.com/Jekyll5UP/jekyll-big-picture#readme"
+}
