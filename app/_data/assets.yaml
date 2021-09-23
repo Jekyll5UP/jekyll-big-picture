@@ -1,0 +1,12 @@
+stylesheets:
+  - ns: main
+    basePath: /assets/styles/
+    resources:
+      - main.css
+
+
+postscripts: 
+ - ns: big_picture
+   basePath: /assets/scripts/modules/big-picture/
+   resources: 
+    - 

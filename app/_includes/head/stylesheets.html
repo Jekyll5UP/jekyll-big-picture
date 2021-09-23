@@ -4,5 +4,12 @@
  version: 11.11.11
 {% endcomment %}
 
+{% assign @stylesheets = site.data.assets.stylesheets %}
 
-<link rel="stylesheet" href="assets/css/main.css" />
+{% for namespace in @stylesheets %}
+ {% assign basePath = namespace.basePath %}
+ {% assign ns = namespace.ns %}
+ {% for resource in namespace.resources %}
+  <link rel="stylesheet" href="{{ basePath }}{{ resource }}" />
+{% endfor %}
+{% endfor %}

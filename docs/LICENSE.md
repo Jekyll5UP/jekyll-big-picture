@@ -1,3 +1,5 @@
+<h2>License</h2>
+
 MIT License
 
 Copyright (c) 2021 Jekyll5UP
