@@ -16,3 +16,6 @@ postscripts:
       - breakpoints.min.js
       - util.js
       - main.js
+
+
+icons: [180x180, ]
