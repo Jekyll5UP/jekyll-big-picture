@@ -10,7 +10,7 @@
 {% assign meta = "head/meta.html" %}
 
 <head>
-  {% include {{ title }} %}
+  {% include {{ title }} delimiter="@" %}
   {% include {{ stylesheets }} %}
   {% include {{ meta }} %}
 

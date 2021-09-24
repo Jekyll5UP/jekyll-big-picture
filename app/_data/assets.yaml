@@ -4,9 +4,15 @@ stylesheets:
     resources:
       - main.css
 
-
-postscripts: 
- - ns: big_picture
-   basePath: /assets/scripts/modules/big-picture/
-   resources: 
-    - 
+postscripts:
+  - ns: big_picture
+    basePath: /assets/scripts/modules/big-picture/
+    resources:
+      - jquery.min.js
+      - jquery.scrolly.min.js
+      - jquery.scrollex.min.js
+      - jquery.poptrox.min.js
+      - browser.min.js
+      - breakpoints.min.js
+      - util.js
+      - main.js
