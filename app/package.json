@@ -7,6 +7,6 @@
     "app:dev":"bundle install && bundle update && bundle exec jekyll serve --incremental --trace --verbose --port 4040",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Jeffrey Desir",
   "license": "MIT"
 }

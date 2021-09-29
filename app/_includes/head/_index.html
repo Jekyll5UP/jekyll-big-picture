@@ -8,10 +8,11 @@
 {% assign title = "head/title.html" %}
 {% assign stylesheets = "head/stylesheets.html" %}
 {% assign meta = "head/meta.html" %}
+{% assign icons = "head/icons.html" %}
 
 <head>
   {% include {{ title }} delimiter="@" %}
   {% include {{ stylesheets }} %}
   {% include {{ meta }} %}
-
+  {% include {{ icons }} %}
 </head>
