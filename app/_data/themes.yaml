@@ -1,0 +1,7 @@
+default: 
+  fonts: 
+  colors: 
+  fx: 
+    animXYZ: 
+    hover: 
+      heading_text: sweep-to-top

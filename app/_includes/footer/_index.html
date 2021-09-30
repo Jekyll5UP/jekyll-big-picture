@@ -1,5 +1,13 @@
+{% comment %}
+ id: head
+ type: partial
+ version: 11.11.11
+{% endcomment %}
+
+{% assign icons = "footer/icons.html" %}
+{% assign menu = "footer/menu.html" %}
 
 <footer id="footer">
-
- 
+ {% include {{ icons }} %}
+ {% include {{ menu }} %}
 </footer>

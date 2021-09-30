@@ -1,12 +1,36 @@
+{% comment %}
+ id: head
+ type: partial
+ version: 11.11.11
+{% endcomment %}
+
+{% assign @headers = site.data.headers %}
+
+{% assign header_source = page.header.source %}
+
+{% if header_source != null %}
+ {% assign PARAMS = @headers[header_source] %}
+ {% else %}
+  {% assign PARAMS = page.header.data %}
+{% endif %}
+
+
 <header id="header">
-  <h1>Big Picture</h1>
+   
+  {% assign title = PARAMS.title %}
+
+  <h1>{{ title }}</h1>
+  
+  {% assign navigation = PARAMS.navigation %}
+
   <nav>
     <ul>
-      <li><a href="#intro">Intro</a></li>
-      <li><a href="#one">What I Do</a></li>
-      <li><a href="#two">Who I Am</a></li>
-      <li><a href="#work">My Work</a></li>
-      <li><a href="#contact">Contact</a></li>
+    {% for link in navigation.links %}
+      <li>
+        <a href="{{ link.href }}">{{ link.name }}</a>
+      </li>
+    {% endfor %}
     </ul>
   </nav>
+  
 </header>

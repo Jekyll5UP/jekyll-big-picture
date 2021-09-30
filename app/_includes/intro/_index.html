@@ -1,18 +1,38 @@
-<section id="intro" class="main style1 dark fullscreen">
+{% comment %}
+ id: intro
+ type: partial
+ version: 11.11.11
+{% endcomment %}
+
+{% assign @intros = site.data.intros %}
+
+{% assign intro_source = page.intro.source %}
+
+{% if intro_source != null %}
+ {% assign PARAMS = @intros[intro_source] %}
+ {% else %}
+ {% assign PARAMS = page.intro.data %}
+{% endif %}
+
+{% capture backgroundImage %}background-image:{{ PARAMS.backgroundImage }};{% endcapture %}
+
+<section style="{{ backgroundImage }}" id="intro" class="main style1 dark fullscreen">
   <div class="content">
+
+    {% assign header = PARAMS.header %}
     <header>
-      <h2>Hey.</h2>
+      <h2>{{ header.title }}</h2>
     </header>
-    <p>
-      Welcome to <strong>Big Picture</strong> a responsive site template
-      designed by <a href="https://html5up.net">HTML5 UP</a><br />
-      and released for free under the
-      <a href="https://html5up.net/license"
-        >Creative Commons Attribution license</a
-      >.
-    </p>
+
+    {% assign body = PARAMS.body %}
+    <p>{{ body.content }}</p>
+    
+    {% assign footer = PARAMS.footer %}
     <footer>
-      <a href="#one" class="button style2 down">More</a>
+     {% for link in footer.links %}
+       <a href="{{ link.href }}">{{ link.name }}</a>
+     {% endfor %}
     </footer>
+
   </div>
 </section>

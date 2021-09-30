@@ -1,0 +1,9 @@
+home: 
+ title: jekyll-big-picture
+ navigation: 
+  links: 
+   - name: Mars
+   - name: Neptune
+   - name: Saturn
+   - name: About
+  

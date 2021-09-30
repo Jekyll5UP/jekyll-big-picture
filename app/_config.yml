@@ -6,7 +6,7 @@ sass:
  sass_dir: styles
 
 
-exclude: [controllers]
+exclude: [controllers, styles, package.json]
 
 
 plugins:
