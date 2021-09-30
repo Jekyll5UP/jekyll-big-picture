@@ -1,33 +1,20 @@
-<ul class="icons">
-  <li>
-    <a href="#" class="icon brands fa-twitter"
-      ><span class="label">Twitter</span></a
-    >
-  </li>
-  <li>
-    <a href="#" class="icon brands fa-facebook-f"
-      ><span class="label">Facebook</span></a
-    >
-  </li>
-  <li>
-    <a href="#" class="icon brands fa-instagram"
-      ><span class="label">Instagram</span></a
-    >
-  </li>
-  <li>
-    <a href="#" class="icon brands fa-linkedin-in"
-      ><span class="label">LinkedIn</span></a
-    >
-  </li>
-  <li>
-    <a href="#" class="icon brands fa-dribbble"
-      ><span class="label">Dribbble</span></a
-    >
-  </li>
-  <li>
-    <a href="#" class="icon brands fa-pinterest"
-      ><span class="label">Pinterest</span></a
-    >
-  </li>
-</ul>
+{% comment %}
+ id: head
+ type: partial
+ version: 11.11.11
+{% endcomment %}
 
+{% assign @icons = site.data.meta.socials.icons %}
+
+<ul class="icons">
+
+  {% for icon in @icons %}
+  <li>
+    <a href="{{ icon.href }}" 
+       class="icon {{ icon.icon.set }} fa-{{ icon.name }}">
+       <span class="label">{{ icon.name }}</span>
+    </a>
+  </li>
+  {% endfor %}
+  
+</ul>

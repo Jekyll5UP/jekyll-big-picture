@@ -14,9 +14,9 @@
  {% assign PARAMS = page.intro.data %}
 {% endif %}
 
-{% capture backgroundImage %}background-image:{{ PARAMS.backgroundImage }};{% endcapture %}
+{% capture backgroundImage %}{{ PARAMS.header.backgroundImage }}{% endcapture %}
 
-<section style="{{ backgroundImage }}" id="intro" class="main style1 dark fullscreen">
+<section style="background-image: url('{{ backgroundImage }}'); background-repeat: no-repeat; background-position: center; background-attachment: fixed fixed; background-size: cover;" id="intro" class="main style1 dark fullscreen">
   <div class="content">
 
     {% assign header = PARAMS.header %}
