@@ -9,11 +9,13 @@
 {% assign meta = "head/meta.html" %}
 {% assign icons = "head/icons.html" %}
 {% assign webfonts = "head/webfonts.html" %}
+{% assign seo = "head/seo.html" %}
 
 <head>
   {% include {{ title }} delimiter="@" %}
   {% include {{ stylesheets }} %}
   {% include {{ meta }} %}
+  {% include {{ seo }} %}
   {% include {{ icons }} %}
   {% include {{ webfonts }} %}
 </head>

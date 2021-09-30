@@ -10,8 +10,9 @@ intro:
 ---
 
 {% assign intro = "intro/_index.html" %}
+{% assign one = "one/_index.html" %}
 {% assign work = "work/_index.html" %}
 
 {% include {{ intro }} %}
-
+{% include {{ one }} %}
 {% include {{ work }} %}

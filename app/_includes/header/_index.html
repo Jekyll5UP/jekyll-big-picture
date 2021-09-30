@@ -18,12 +18,14 @@
 <header id="header">
    
   {% assign title = PARAMS.title %}
+  {% assign logoSource = PARAMS.logo.source %}
 
-  <h1>{{ title }}</h1>
+  <img class="logo" src="{{ logoSource }}"/>
+
   
   {% assign navigation = PARAMS.navigation %}
 
-  <nav>
+  <nav class="hide-xs hide-sm">
     <ul>
     {% for link in navigation.links %}
       <li>

@@ -5,5 +5,54 @@ socials:
     - name: twitter
       href: https://twitter.com/
       icon:
+        id: facebook
+        set: brands
+        
+    - name: twitter
+      href: https://twitter.com/
+      icon:
+        id: instagram
+        set: brands
+
+    - name: twitter
+      href: https://twitter.com/
+      icon:
+        id: linkedin
+        set: brands
+
+    - name: twitter
+      href: https://twitter.com/
+      icon:
         id: twitter
         set: brands
+
+    - name: twitter
+      href: https://twitter.com/
+      icon:
+        id: google
+        set: brands
+
+    - name: twitter
+      href: https://twitter.com/
+      icon:
+        id: youtube
+        set: brands
+
+    - name: twitter
+      href: https://twitter.com/
+      icon:
+        id: gitlab
+        set: brands
+
+    - name: twitter
+      href: https://twitter.com/
+      icon:
+        id: github
+        set: brands
+
+    - name: twitter
+      href: https://twitter.com/
+      icon:
+        id: twitter
+        set: brands
+

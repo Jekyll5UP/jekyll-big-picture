@@ -3,17 +3,10 @@ layout: root
 ---
 
 {% comment %}
- id: head
- type: partial
+ id: page
+ type: layout
  version: 11.11.11
 {% endcomment %}
 
-{% assign header = "header/_index.html" %}
-{% assign footer = "footer/_index.html" %}
-
-
-{% include {{ header }} %}
-
 {{ content }}
 
-{% include {{ footer }} %}

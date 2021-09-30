@@ -1,15 +1,41 @@
-<!-- One -->
-<section id="one" class="main style2 right dark fullscreen">
-    <div class="content box style2">
-      <header>
-        <h2>What I Do</h2>
-      </header>
-      <p>
-        Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore
-        condimentum. Fusce blandit ultrices sapien, in accumsan orci rhoncus eu.
-        Sed sodales venenatis arcu, id varius justo euismod in. Curabitur egestas
-        consectetur magna.
-      </p>
-    </div>
-    <a href="#two" class="button style2 down anchored">Next</a>
-  </section>
+{% comment %}
+ id: head
+ type: partial
+ version: 11.11.11
+{% endcomment %}
+
+{% assign @ones = site.data.ones %}
+
+{% assign one_source = page.one.source %}
+
+{% if one_soure != null %}
+ {% assign PARAMS = @ones[one_source] %}
+ {% else %}
+ {% assign PARAMS = page.one.data %}
+{% endif %}
+
+
+<section id="one" class="main style2 right fullscreen">
+  <div class="content box style2">
+
+    {% assign header = PARAMS.header %}
+
+    <header>
+      <h2>{{ header.title }}</h2>
+    </header>
+
+    {% assign body = PARAMS.body %}
+
+    <p>{{ body.content }}</p>
+
+  </div>
+  
+   {% assign footer = PARAMS.footer %}
+
+  <footer>
+    {% for action in footer.actions %}
+     <a href="{{ action.href }}" class="button style2 down anchored">{{ action.name }}</a>
+    {% endfor %}
+  </footer>
+  
+</section>

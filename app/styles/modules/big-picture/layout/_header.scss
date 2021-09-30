@@ -1,20 +1,24 @@
 #header {
-  display: flex;
   color: var(--COLOR-TEXT);
   position: fixed;
+  display: flex;
+  align-items: center;
   z-index: 10000;
   left: 0;
   top: 0;
   width: 100%;
   background: transparentize(_palette(bg), 0.5);
   height: 4.2em;
-  line-height: 3em;
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
 
-  h1 {
-    position: absolute;
-    left: 1em;
-    top: 0;
+  .logo {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    opacity: 0.89;
+    height: 260px;
+    width: 260px;
+  
   }
 
   nav {
@@ -25,6 +29,7 @@
     line-height: 3em;
 
     ul {
+      display: flex;
       margin: 0;
       display: flex;
 
@@ -47,14 +52,11 @@
   }
 
   @include breakpoint("<=small") {
-
     h1 {
       position: absolute;
       left: 0;
       top: 0;
       text-align: center;
     }
- 
   }
 }
-

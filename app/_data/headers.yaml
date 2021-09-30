@@ -1,5 +1,7 @@
 home: 
  title: jekyll-big-picture
+ logo:
+  source: /assets/images/logo.png/
  navigation: 
   links: 
    - name: Mars
