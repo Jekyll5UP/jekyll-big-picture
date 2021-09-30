@@ -1,0 +1,27 @@
+- id: jekyll-default-layout
+  repo: https://github.com/benbalter/jekyll-default-layout
+
+- id: jekyll-optional-front-matter
+  repo: https://github.com/benbalter/jekyll-optional-front-matter
+
+- id: jekyll-titles-from-headings
+  repo: https://github.com/benbalter/jekyll-titles-from-headings
+
+- id: jekyll-loading-lazy
+  repo: https://github.com/gildesmarais/jekyll-loading-lazy
+
+- id: liquid-md5
+  repo: https://github.com/pathawks/liquid-md5
+
+- id: jekyll-admin
+  repo: https://github.com/jekyll/jekyll-admin
+
+- id: jekyll-target-blank
+  repo: https://github.com/keithmifsud/jekyll-target-blank
+
+
+- id: jekyll-seo-tag 
+  repo: https://github.com/jekyll/jekyll-seo-tag
+
+- id: jekyll-datapage-generator
+  repo: https://github.com/avillafiorita/jekyll-datapage_gen

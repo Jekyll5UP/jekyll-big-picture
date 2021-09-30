@@ -47,25 +47,14 @@
   }
 
   @include breakpoint("<=small") {
-    height: 2.5em;
-    line-height: 2.5em;
 
     h1 {
-      text-align: center;
-      position: relative;
+      position: absolute;
       left: 0;
       top: 0;
-      height: 2.5em;
-      line-height: 2.5em;
-
-      a {
-        font-size: 1em;
-      }
+      text-align: center;
     }
-
-    nav {
-      display: none;
-    }
+ 
   }
 }
 

@@ -11,3 +11,12 @@ exclude: [controllers, styles, package.json]
 
 plugins:
   - jekyll-feed
+  - jekyll-default-layout
+  - jekyll-optional-front-matter
+  - jekyll-titles-from-headings
+  - jekyll-loading-lazy
+  - liquid-md5
+  - jekyll-admin
+  - jekyll-target-blank
+  - jekyll-seo-tag
+  - jekyll-datapage-generator
