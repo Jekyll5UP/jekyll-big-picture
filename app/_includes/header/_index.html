@@ -4,7 +4,7 @@
  version: 11.11.11
 {% endcomment %}
 
-{% assign dropdown_menu = "dropdown_menu/_index.html" %}
+{% assign mobile_menu = "header/mobile-menu.html" %}
 
 {% assign @headers = site.data.headers %}
 
@@ -16,24 +16,18 @@
   {% assign PARAMS = page.header.data %}
 {% endif %}
 
+{% assign logoSource = PARAMS.logo.source %}
+{% assign navigation = PARAMS.navigation %}
 
 <header id="header">
    
-  {% assign title = PARAMS.title %}
-  {% assign logoSource = PARAMS.logo.source %}
-
-  <img class="logo" src="{{ logoSource }}"/>
-
+ <img class="logo" src="{{ logoSource }}"/>
   
-  {% assign navigation = PARAMS.navigation %}
-
-
-  <nav class="navigation">
-
-    <ul xyz="stagger-8 fade" class="hide-xs hide-sm">
+ <nav class="navigation">
+   <ul>
     {% for link in navigation.links %}
       <li>
-        <a class="xyz-in hvr-sweep-to-top" href="{{ link.href }}">{{ link.name }}</a>
+        <a href="{{ link.href }}">{{ link.name }}</a>
       </li>
     {% endfor %}
     </ul>

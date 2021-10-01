@@ -8,14 +8,15 @@
 
 {% assign one_source = page.one.source %}
 
-{% if one_soure != null %}
+{% if one_source != null %}
  {% assign PARAMS = @ones[one_source] %}
  {% else %}
  {% assign PARAMS = page.one.data %}
 {% endif %}
 
 
-<section id="one" class="main style2 right fullscreen">
+
+<section class="main style2 right fullscreen">
   <div class="content box style2">
 
     {% assign header = PARAMS.header %}

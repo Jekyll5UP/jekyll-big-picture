@@ -1,8 +1,17 @@
-home: 
- title: jekyll-big-picture
- logo:
-  source: /assets/images/logo.png/
- navigation: 
-  links: 
-   - name: About
-  
+home:
+  title: jekyll-big-picture
+  logo:
+    source: /assets/images/logo.png/
+  navigation:
+    links:
+      - name: Intro
+        href: '#intro'
+
+      - name: Stories
+      - name: Gallery
+      - name: Contact
+      
+      - name: Footer
+        href: '#footer'
+      - name: Docs
+      - name: About

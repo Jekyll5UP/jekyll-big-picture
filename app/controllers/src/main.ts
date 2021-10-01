@@ -1,4 +1,4 @@
-import Particles from "./views/Partices.svelte";
+import Particles from "./views/Particles.svelte";
 
 export const IntroMaskParticles = new Particles({
 	target: document.body
