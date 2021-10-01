@@ -1,1 +1,1 @@
-<img src="/logo.png"/>
+<img src="https://github.com/Jekyll5UP/jekyll-big-picture/blob/main/docs/logo.png"/>

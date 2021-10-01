@@ -4,8 +4,5 @@ home:
   source: /assets/images/logo.png/
  navigation: 
   links: 
-   - name: Mars
-   - name: Neptune
-   - name: Saturn
    - name: About
   
