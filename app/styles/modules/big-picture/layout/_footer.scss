@@ -1,74 +1,67 @@
-///
-/// Big Picture by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
+#footer {
+  @include vendor("display", "flex");
+  @include vendor("align-items", "center");
+  @include vendor("justify-content", "space-between");
+  position: relative;
+  margin: 0;
+  height: 30%;
+  line-height: 1.5em;
+  padding: 3.5em;
+  background: _palette(accent3, bg);
+  color: var(--COLOR-TEXT);
+  overflow: hidden;
 
-/* Footer */
+  > * {
+    margin-bottom: 0;
+  }
 
-	#footer {
-		@include vendor('display', 'flex');
-		@include vendor('align-items', 'center');
-		@include vendor('justify-content', 'space-between');
-		position: relative;
-		margin: 0;
-		line-height: 1em;
-		padding: 1.5em;
-		background: _palette(accent3, bg);
-		color: _palette(accent3, fg);
-		overflow: hidden;
+  a {
+    color: inherit;
 
-		> * {
-			margin-bottom: 0;
-		}
+    &:hover {
+      color: _palette(accent3, fg-bold);
+    }
+  }
 
-		a {
-			color: inherit;
+  ul {
+    &.menu {
+      margin: 0;
 
-			&:hover {
-				color: _palette(accent3, fg-bold);
-			}
-		}
+      li {
+        border-left-color: _palette(accent3, border);
+        font-size: 0.9em;
+      }
+    }
+  }
 
-		ul {
-			&.menu {
-				margin: 0;
+  @include breakpoint("<=medium") {
+    @include vendor("flex-direction", "column");
+    @include vendor("justify-content", "center");
+    line-height: 1.5em;
+    text-align: center;
+    padding: 2em 1em 2em 1em;
 
-				li {
-					border-left-color: _palette(accent3, border);
-					font-size: 0.9em;
-				}
-			}
-		}
+    > * {
+      margin: 0 0 1em 0;
+    }
+  }
 
-		@include breakpoint('<=medium') {
-			@include vendor('flex-direction', 'column');
-			@include vendor('justify-content', 'center');
-			line-height: 1.5em;
-			text-align: center;
-			padding: 2em 1em 2em 1em;
+  @include breakpoint("<=small") {
+    ul {
+      &.menu {
+        li {
+          border-left: none;
+          display: block;
+          line-height: inherit;
+          margin: 0.25em 0 0 0;
+          padding: 0.25em 0 0 0;
 
-			> * {
-				margin: 0 0 1em 0;
-			}
-		}
-
-		@include breakpoint('<=small') {
-			ul {
-				&.menu {
-					li {
-						border-left: none;
-						display: block;
-						line-height: inherit;
-						margin: 0.25em 0 0 0;
-						padding: 0.25em 0 0 0;
-
-						&:first-child {
-							margin-top: 0;
-							padding-top: 0;
-						}
-					}
-				}
-			}
-		}
-	}
+          &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,4 +3,16 @@
   background-attachment: fixed, fixed;
   background-position: top left, bottom center;
   background-repeat: repeat, no-repeat;
+
+  .content {
+
+    header {
+
+      h2 {
+       
+        letter-spacing: 15px;
+        line-height: 1.5em;
+      }
+    }
+  }
 }
