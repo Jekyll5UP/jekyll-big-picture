@@ -17,13 +17,18 @@ postscripts:
       - util.js
       - main.js
 
+webfonts:
+ - ns: google webfonts
+   preconnects:
+    - href: https://fonts.googleapis.com
+      opts:  
 
-webfonts: 
- - ns: Google Fonts
-   basePath: https://fonts.googleapis.com/css2?family=
+    - href: https://fonts.gstatic.com
+      opts: crossorigin
    resources: 
-    - Play
+     - id: Expletus Sans
+       href: https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap
 
-icons: 
- basePath: /assets/images/favicons/
- sizes: [180x180, 152x152, 144x144, 120x120, 114x114, 76x76, 72x72, 57x57 ]
+icons:
+  basePath: /assets/images/favicons/
+  sizes: [180x180, 152x152, 144x144, 120x120, 114x114, 76x76, 72x72, 57x57]

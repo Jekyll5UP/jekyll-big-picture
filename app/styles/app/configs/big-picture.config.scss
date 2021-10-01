@@ -16,7 +16,7 @@ $size: (
 
 // Font.
 $font: (
-    family:				('Play', 'sans-serif'),
+
     weight:				300,
     weight-bold:		900
 );
@@ -35,7 +35,7 @@ $palette: (
         border:			#ffffff
     ),
     accent1: (
-        bg:				#98c593,
+        bg:				#52995C,
         fg:				#ffffff,
         fg-bold:		#ffffff,
         border:			#ffffff
@@ -47,9 +47,9 @@ $palette: (
         border:			#ffffff
     ),
     accent3: (
-        bg:				#39454b,
+        bg:				#52995C,
         fg:				rgba(185,186,187,0.5),
         fg-bold:		rgba(185,186,187,1),
-        border:			rgba(185,186,187,0.2)
+        border:			52995C(185,186,187,0.2)
     )
 );

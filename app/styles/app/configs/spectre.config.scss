@@ -35,20 +35,6 @@ $link-color-dark: darken($link-color, 10%);
 $link-color-light: lighten($link-color, 10%);
 
 
-$base-font-family: "Play", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
-  Roboto;
-$mono-font-family: "Play", "Segoe UI Mono", "Roboto Mono", Menlo, Courier,
-  monospace;
-$fallback-font-family: "Helvetica Neue", sans-serif;
-$cjk-zh-hans-font-family: $base-font-family, "PingFang SC", "Hiragino Sans GB",
-  "Microsoft YaHei", $fallback-font-family;
-$cjk-zh-hant-font-family: $base-font-family, "PingFang TC", "Hiragino Sans CNS",
-  "Microsoft JhengHei", $fallback-font-family;
-$cjk-jp-font-family: $base-font-family, "Hiragino Sans",
-  "Hiragino Kaku Gothic Pro", "Yu Gothic", YuGothic, Meiryo,
-  $fallback-font-family;
-$cjk-ko-font-family: $base-font-family, "Malgun Gothic", $fallback-font-family;
-$body-font-family: $base-font-family, $fallback-font-family;
 
 // Unit sizes
 $unit-o: 0.05rem;

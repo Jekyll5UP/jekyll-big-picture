@@ -1,2 +1,19 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{% comment %}
+ id: webfonts.head
+ type: element
+ version: 11.11.11
+{% endcomment %}
+
+{% assign @webfonts = site.data.assets.webfonts %}
+
+{% for namespace in @webfonts %}
+ {% assign preconnects = namespace.preconnects %}
+ {% for preconnect in preconnects %}
+  <link rel="preconnect" href="{{ preconnect.href }}" {{ preconnects.opts }}/>
+ {% endfor %}
+
+ {% assign resources = namespace.resources %}
+ {% for resource in resources %}
+ <link data-id="{{ resource.id }}" href="{{ resource.href }}" rel="stylesheet">
+ {% endfor %}
+{% endfor %}
