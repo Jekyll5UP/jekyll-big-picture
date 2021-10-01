@@ -29,6 +29,8 @@
 
   <nav>
 
+    {% include {{ dropdown_menu }} name="&" %}
+
     <ul class="hide-xs hide-sm">
     {% for link in navigation.links %}
       <li>
