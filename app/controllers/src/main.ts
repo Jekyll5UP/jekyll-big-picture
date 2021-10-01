@@ -1,10 +1,5 @@
-import App from './App.svelte';
+import Particles from "./views/Partices.svelte";
 
-const app = new App({
-	target: document.body,
-	props: {
-		name: 'world'
-	}
-});
-
-export default app;
+export const IntroMaskParticles = new Particles({
+	target: document.body
+})

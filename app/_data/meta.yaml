@@ -4,30 +4,35 @@ socials:
   icons:
     - name: twitter
       href: https://twitter.com/
+      tag: '@onearth'
       icon:
         id: facebook
         set: brands
         
     - name: twitter
       href: https://twitter.com/
+      tag: '@onearth'
       icon:
         id: instagram
         set: brands
 
     - name: twitter
       href: https://twitter.com/
+      tag: '@onearth'
       icon:
         id: linkedin
         set: brands
 
     - name: twitter
       href: https://twitter.com/
+      tag: '@onearth'
       icon:
         id: twitter
         set: brands
 
     - name: twitter
       href: https://twitter.com/
+      tag: '@onearth'
       icon:
         id: google
         set: brands
@@ -40,18 +45,21 @@ socials:
 
     - name: twitter
       href: https://twitter.com/
+      tag: '@onearth'
       icon:
         id: gitlab
         set: brands
 
     - name: twitter
       href: https://twitter.com/
+      tag: '@onearth'
       icon:
         id: github
         set: brands
 
     - name: twitter
       href: https://twitter.com/
+      tag: '@onearth'
       icon:
         id: twitter
         set: brands

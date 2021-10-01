@@ -7,18 +7,19 @@ stylesheets:
   - ns: externals
     basePath: https://
     resources:
-      #- unpkg.com/spectre.css/dist/spectre-exp.min.css
-      # - unpkg.com/spectre.css/dist/spectre-icons.min.css
+      - cdn.jsdelivr.net/npm/@animxyz/core
+      - unpkg.com/spectre.css/dist/spectre-exp.min.css
 
 prescripts:
   - ns: externals
     basePath: https://
     resources:
-      - cdn.jsdelivr.net/npm/tsparticles"
+      - code.jquery.com/jquery-3.5.1.slim.min.js
+      - cdn.jsdelivr.net/npm/tsparticles
       - cdn.jsdelivr.net/npm/jquery-particles
 
 postscripts:
-  - ns: big_picture
+  - ns: big-picture
     basePath: /assets/scripts/modules/big-picture/
     resources:
       - jquery.min.js
@@ -28,6 +29,11 @@ postscripts:
       - browser.min.js
       - breakpoints.min.js
       - util.js
+      - main.js
+
+  - ns: controllers
+    basePath: /assets/scripts/modules/controllers/
+    resources:
       - main.js
 
 webfonts:

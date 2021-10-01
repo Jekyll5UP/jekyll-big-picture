@@ -1,8 +1,12 @@
 :root {
-    --OFF-WHITE: rgb(232, 255, 227);
-    --EXPLETUS-SANS: 'Expletus Sans', system-ui, monospace;
-    --EARTH-GREEN: #52995C;
-    --FONT-PRIMARY: var(--EXPLETUS-SANS);
-    --COLOR-PRIMARY: var(--EARTH-GREEN);
-    --COLOR-TEXT: var(--OFF-WHITE);
+  --OFF-WHITE: rgb(232, 255, 227);
+  --EXPLETUS-SANS: "Expletus Sans", system-ui, monospace;
+  --EARTH-GREEN: #52995c;
+  --FONT-PRIMARY: var(--EXPLETUS-SANS);
+  --COLOR-PRIMARY: var(--EARTH-GREEN);
+  --COLOR-TEXT: var(--OFF-WHITE);
+
+  --Z-INDEX-BASE: 10000;
+
+  --FONT-SIZE-BASE: 16px;
 }

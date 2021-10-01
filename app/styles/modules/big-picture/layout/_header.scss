@@ -3,17 +3,17 @@
   position: fixed;
   display: flex;
   align-items: center;
-  z-index: 10000;
+  z-index: var(--Z-INDEX-BASE);
   left: 0;
   top: 0;
   width: 100%;
-  background: transparentize(_palette(bg), 0.08);
-  height: 4.4em;
-  box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+  background: transparentize(_palette(bg), 0.6);
+  height: 4.5em;
+  box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.4);
 
   .logo {
     position: relative;
-    margin: 0;
+    margin-bottom: 18px;
     padding: 0;
     height: 260px;
     width: 260px;

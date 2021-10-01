@@ -11,8 +11,9 @@
   {% for icon in @icons %}
   <li>
     <a href="{{ icon.href }}" 
-       class="icon {{ icon.icon.set }} fa-{{ icon.icon.id }}">
-       <span class="label">{{ icon.name }}</span>
+    data-tooltip="{{ icon.tag }}"
+       class="icon hvr-bob tooltip {{ icon.icon.set }} fa-{{ icon.icon.id }}">
+       <span class="label" >{{ icon.name }}</span>
     </a>
   </li>
   {% endfor %}

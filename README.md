@@ -4,7 +4,9 @@
 
 **a landing-page-story styled, MVC-architecture ready, Jekyll template designed by @html5up "Editorial".**
 <h2>Features</h2>
-
+<h2>Installation</h2>
+<h2>Usage</h2>
+<h2>Versions</h2>
 <h2>📜 License</h2>
 
 <details>

@@ -4,8 +4,9 @@
  version: 11.11.11
 {% endcomment %}
 
-{% assign @headers = site.data.headers %}
 {% assign dropdown_menu = "dropdown_menu/_index.html" %}
+
+{% assign @headers = site.data.headers %}
 
 {% assign header_source = page.header.source %}
 
@@ -27,14 +28,12 @@
   {% assign navigation = PARAMS.navigation %}
 
 
-  <nav>
+  <nav class="navigation">
 
-    {% include {{ dropdown_menu }} name="&" %}
-
-    <ul class="hide-xs hide-sm">
+    <ul xyz="stagger-8 fade" class="hide-xs hide-sm">
     {% for link in navigation.links %}
       <li>
-        <a href="{{ link.href }}">{{ link.name }}</a>
+        <a class="xyz-in hvr-sweep-to-top" href="{{ link.href }}">{{ link.name }}</a>
       </li>
     {% endfor %}
     </ul>

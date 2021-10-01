@@ -3,4 +3,6 @@
 (load:docs/TL;DR.md)
 (load:docs/FEATURES.md)
 (load:docs/INSTALLATION.md)
+(load:docs/USAGE.md)
+(load:docs/VERSIONS.md)
 (load:docs/LICENSE.md)
