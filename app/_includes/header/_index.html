@@ -5,6 +5,7 @@
 {% endcomment %}
 
 {% assign @headers = site.data.headers %}
+{% assign dropdown_menu = "dropdown_menu/_index.html" %}
 
 {% assign header_source = page.header.source %}
 
@@ -25,8 +26,10 @@
   
   {% assign navigation = PARAMS.navigation %}
 
-  <nav class="hide-xs hide-sm">
-    <ul>
+
+  <nav>
+
+    <ul class="hide-xs hide-sm">
     {% for link in navigation.links %}
       <li>
         <a href="{{ link.href }}">{{ link.name }}</a>
@@ -34,31 +37,6 @@
     {% endfor %}
     </ul>
   </nav>
-  <!-- basic dropdown button -->
-<div class="dropdown">
-  <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
-    dropdown menu <i class="icon icon-caret"></i>
-  </a>
-  <!-- menu component -->
-  <ul class="menu">
-    ...
-  </ul>
-</div>
-
-<!-- dropdown button group -->
-<div class="dropdown">
-  <div class="btn-group">
-    <a href="#" class="btn">
-      dropdown button
-    </a>
-    <a href="#" class="btn dropdown-toggle" tabindex="0">
-      <i class="icon icon-caret"></i>
-    </a>
-
-    <!-- menu component -->
-    <ul class="menu">
-      ...
-    </ul>
-  </div>
+ 
 </div>
 </header>

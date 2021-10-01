@@ -4,6 +4,19 @@ stylesheets:
     resources:
       - main.css
 
+  - ns: externals
+    basePath: https://
+    resources:
+      #- unpkg.com/spectre.css/dist/spectre-exp.min.css
+      # - unpkg.com/spectre.css/dist/spectre-icons.min.css
+
+prescripts:
+  - ns: externals
+    basePath: https://
+    resources:
+      - cdn.jsdelivr.net/npm/tsparticles"
+      - cdn.jsdelivr.net/npm/jquery-particles
+
 postscripts:
   - ns: big_picture
     basePath: /assets/scripts/modules/big-picture/
@@ -18,16 +31,16 @@ postscripts:
       - main.js
 
 webfonts:
- - ns: google webfonts
-   preconnects:
-    - href: https://fonts.googleapis.com
-      opts:  
+  - ns: google webfonts
+    preconnects:
+      - href: https://fonts.googleapis.com
+        opts:
 
-    - href: https://fonts.gstatic.com
-      opts: crossorigin
-   resources: 
-     - id: Expletus Sans
-       href: https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap
+      - href: https://fonts.gstatic.com
+        opts: crossorigin
+    resources:
+      - id: Expletus Sans
+        href: https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap
 
 icons:
   basePath: /assets/images/favicons/

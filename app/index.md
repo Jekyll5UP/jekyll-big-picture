@@ -7,14 +7,17 @@ header:
 
 intro:
   source: home
+
+work:
+ source: home
 ---
 
 {% assign intro = "intro/_index.html" %}
 {% assign one = "one/_index.html" %}
-{% assign two = "two/_index.html" %}
 {% assign work = "work/_index.html" %}
+{% assign contact = "contact/_index.html" %}
 
 {% include {{ intro }} %}
 {% include {{ one }} %}
-{% include {{ two }} %}
 {% include {{ work }} %}
+{% include {{ contact }} %}
