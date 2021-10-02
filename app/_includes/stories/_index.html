@@ -19,9 +19,18 @@
 
 
 {% for story in @stories %}
-<section id="stories" class="main style2 {{ story.direction }} fullscreen">
+<section
+  style="
+    background-image: url('/assets/images/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed fixed;
+    background-size: cover;
+  "
+  id="stories"
+  class="main style2 {{ story.direction }} fullscreen"
+>
   <div class="content box style2">
-
     {% assign header = story.header %}
 
     <header>
@@ -31,16 +40,16 @@
     {% assign body = story.body %}
 
     <p>{{ body.content }}</p>
-
   </div>
-  
-   {% assign footer = story.footer %}
+
+  {% assign footer = story.footer %}
 
   <footer>
     {% for action in footer.actions %}
-     <a href="{{ action.href }}" class="button style2 down anchored">{{ action.name }}</a>
+    <a href="{{ action.href }}" class="button style2 down anchored"
+      >{{ action.name }}</a
+    >
     {% endfor %}
   </footer>
-  
 </section>
 {% endfor %}

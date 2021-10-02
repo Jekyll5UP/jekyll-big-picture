@@ -59,12 +59,11 @@ socials:
 
 footer:
   menus:
-    - name: Copyright
-      items:
-        - "&copy; Jeffrey Desir"
-        - "MIT License"
-        - "Design by @HTML5UP"
-
     - name: Technologies
       items:
         - "Made w/ Jekyll + Svelte"
+    - name: Copyright
+      items:
+        - "&copy; Jffrydsr.tech"
+        - "MIT License"
+        - "Design by @HTML5UP"

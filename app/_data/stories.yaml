@@ -19,7 +19,7 @@ home:
         actions:
 
     - id:
-      direction: left
+      direction: right
       header:
         title: Fire
       body:
