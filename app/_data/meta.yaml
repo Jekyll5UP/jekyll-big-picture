@@ -57,15 +57,14 @@ socials:
         id: github
         set: brands
 
-    - name: twitter
-      href: https://twitter.com/
-      tag: "@onearth"
-      icon:
-        id: twitter
-        set: brands
 footer:
-  menu:
-    items:
-      - "&copy; Jeffrey Desir"
-      - "MIT License"
-      - "Made w/ T.L.C"
+  menus:
+    - name: Copyright
+      items:
+        - "&copy; Jeffrey Desir"
+        - "MIT License"
+        - "Design by @HTML5UP"
+
+    - name: Technologies
+      items:
+        - "Made w/ Jekyll + Svelte"

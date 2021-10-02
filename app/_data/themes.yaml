@@ -1,7 +1,11 @@
-default: 
-  fonts: 
-  colors: 
-  fx: 
-    animXYZ: 
-    hover: 
-      heading_text: sweep-to-top
+animations:
+ default: 
+  animXYZ: 
+   header: 
+    navigation: stagger-7 fade
+  hover: 
+   header: 
+    navigation: 
+   
+   footer: grow-shadow
+styles: 

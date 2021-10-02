@@ -1,12 +1,22 @@
+{% comment %}
+ id: menu.footer
+ type: partial
+ version: 11.11.11
+{% endcomment %}
 
 {% assign @footer = site.data.meta.footer %}
+{% assign @fx = site.data.animations.default %}
 
-{% assign @menu = @footer.menu %}
+{% assign @menus = @footer.menus %}
 
 
+{% assign hover_animations = @fx.hover %}
+
+{% for menu in @menus %}
 <ul class="menu">
- {% for item in @menu.items %}
-  <li>{{ item }}</li>
+ {% for item in menu.items %}
+  <li class="hvr-{{ hover_animations.footer }}">{{ item }}</li>
  {% endfor %}
 </ul>
+{% endfor %}
   

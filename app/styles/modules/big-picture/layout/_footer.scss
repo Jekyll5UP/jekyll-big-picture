@@ -2,20 +2,20 @@
   @include vendor("display", "flex");
   @include vendor("align-items", "center");
   @include vendor("justify-content", "space-between");
-  position: fixed;
-  bottom: 0;
-  left:0; 
-  width: 100%;
-  margin: 0;
-  height: 25%;
-  line-height: 1.5em;
-  padding: 2.2em;
-  background: _palette(accent3, bg);
   color: var(--COLOR-TEXT);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  margin: 0;
+  line-height: 1.2em;
+  padding: 2em;
   overflow: hidden;
 
   > * {
     margin-bottom: 0;
+    transition: all 0.5s ease;
   }
 
   a {
@@ -28,7 +28,8 @@
 
   ul {
     &.menu {
-      margin: 0;
+      cursor: pointer;
+      margin: 0.3em;
 
       li {
         border-left-color: _palette(accent3, border);
@@ -40,7 +41,18 @@
   @include breakpoint("<=medium") {
     @include vendor("flex-direction", "column");
     @include vendor("justify-content", "center");
-
-    }
+    height: 45%;
   }
 
+  @include breakpoint("<=small") {
+    @include vendor("flex-direction", "column");
+    @include vendor("justify-content", "center");
+    height: 65%;
+  }
+
+  @include breakpoint("<=xsmall") {
+    @include vendor("flex-direction", "column");
+    @include vendor("justify-content", "center");
+    height: 75%;
+  }
+}

@@ -1,15 +1,13 @@
 {% comment %}
- id: head
+ id: footer
  type: partial
  version: 11.11.11
 {% endcomment %}
 
 {% assign icons = "footer/icons.html" %}
 {% assign menu = "footer/menu.html" %}
-{% assign menu_2 = "footer/menu.html" %}
 
 <footer style="background-image: url('/assets/images/bg.png');" id="footer">
  {% include {{ icons }} %}
  {% include {{ menu }} %}
- {% include {{ menu_2 }} %}
 </footer>

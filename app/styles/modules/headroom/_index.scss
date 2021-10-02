@@ -1,6 +1,6 @@
 .headroom {
   will-change: transform;
-  transition: transform 200ms linear;
+  transition: transform 200ms ease-in;
 }
 .headroom--pinned {
   transform: translateY(0%);
