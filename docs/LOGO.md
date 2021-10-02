@@ -1,1 +1,1 @@
-<img height="120px" width="120px"src="https://github.com/Jekyll5UP/jekyll-big-picture/blob/main/docs/logo.png"/>
+<img height="120px" width="120px" src="https://github.com/Jekyll5UP/jekyll-big-picture/blob/main/docs/logo.png"/>

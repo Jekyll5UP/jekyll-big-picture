@@ -1,5 +1,5 @@
 <!-- ⚠️ This README has been generated from the file(s) "SCHEMA.md" ⚠️--><h1>jekyll-big-picture</h1>
-<img height="120px" width="120px"src="https://github.com/Jekyll5UP/jekyll-big-picture/blob/main/docs/logo.png"/>
+<img height="120px" width="120px" src="https://github.com/Jekyll5UP/jekyll-big-picture/blob/main/docs/logo.png"/>
 <h2>TL;DR</h2>
 
 **a landing-page-story styled, MVC-architecture ready, Jekyll template designed by @html5up "Editorial".**
