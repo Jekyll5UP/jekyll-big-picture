@@ -1,6 +1,6 @@
 home:
- header: 
-  title: Planet Earth
-  backgroundImage: /assets/images/bg.png
- body: 
-   content: a place to care about. 
+  header:
+    title: Earth
+    backgroundImage: /assets/images/bg.png
+  body:
+    content: a place to start caring about...

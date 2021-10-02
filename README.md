@@ -1,13 +1,63 @@
 <!-- ⚠️ This README has been generated from the file(s) "SCHEMA.md" ⚠️--><h1>jekyll-big-picture</h1>
-<img height="120px" width="120px" src="https://github.com/Jekyll5UP/jekyll-big-picture/blob/main/docs/logo.png"/>
+<img height="320px" width="320px" src="https://github.com/Jekyll5UP/jekyll-big-picture/blob/main/docs/logo.png"/>
 <h2>TL;DR</h2>
 
 **a landing-page-story styled, MVC-architecture ready, Jekyll template designed by @html5up "Editorial".**
 <h2>📸 Screenshots</h2>
-<h2>Features</h2>
-<h2>Installation</h2>
-<h2>Usage</h2>
+<h2>🥳 Features</h2>
+
+- **Spectre-defined Component Subsystem**
+- **Hover.css animations**
+- **AnimXYZ animations**
+- **Svelte-powered component & controller pattern**
+- **TSParticles Plugin**
+- **Jekyll Utility Gems**
+- [**Forestry.io](http://Forestry.io) Compatiable**
+- **Containerized**
+<h2>🛠 Installation</h2>
+
+🚣‍♂️**Docker**
+
+```bash
+sudo docker-compose up
+```
+
+❄️**Vagrant** 
+
+```bash
+sudo vagrant up
+```
+
+💻**Local**
+
+```bash
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)]#npm-manual
+
+# ➤ npm manual
+npm run app:production
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)]#gulp-automated
+
+# ➤ gulp automated
+gulp bootstrap
+```
+<h2>🔨 Usage</h2>
+
+<details>
+ <summary><b></b></summary>
+ </details>
 <h2>📄 Versions</h2>
+
+<details>
+ <summary>M.V.P 'beta' @ [11.11.11]</summary>
+
+ <ul>
+  <li>Required Configuarations</li>
+  <li>Basic Optimizations</li>
+ </ul>
+ </details>
 <h2>📜 License</h2>
 
 <details>

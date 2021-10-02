@@ -25,7 +25,7 @@
   <ul class="{{ include.responsive }}">
     {% for link in @navigation.links %}
     <li>
-      <a class="hvr-{{ @hover_fx.headings.primary }} href="{{ link.href }}">{{ link.name }}</a>
+      <a class="hvr-{{ @hover_fx.headings.primary }}" href="{{ link.href }}">{{ link.name }}</a>
     </li>
     {% endfor %}
   </ul>
