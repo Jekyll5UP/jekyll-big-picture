@@ -3,6 +3,7 @@
 (load:docs/TL;DR.md)
 (load:docs/SCREENSHOTS.md)
 (load:docs/FEATURES.md)
+(load:docs/FILE_TREE.md)
 (load:docs/INSTALLATION.md)
 (load:docs/USAGE.md)
 (load:docs/VERSIONS.md)

@@ -14,6 +14,30 @@
 - **Jekyll Utility Gems**
 - [**Forestry.io](http://Forestry.io) Compatiable**
 - **Containerized**
+<h2>🌲 File Tree</h2>
+
+```bash
+.github/
+app/
+├─ assets/
+│  ├─ styles/
+│  ├─ scripts/
+│  ├─ images/
+│  ├─ webfonts/
+├─ controllers/
+├─ pages/
+├─ styles/
+│  ├─ app/
+│  ├─ modules/
+├─ tests/
+├─ _data/
+├─ _includes/
+├─ _layouts/
+docs/
+build/
+├─ index.js
+├─ bootstrap.sh
+```
 <h2>🛠 Installation</h2>
 
 🚣‍♂️**Docker**
