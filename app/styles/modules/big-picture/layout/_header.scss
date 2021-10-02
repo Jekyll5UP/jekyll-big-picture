@@ -1,7 +1,9 @@
 #header {
+  @include vendor("display", "flex");
+
   color: var(--COLOR-TEXT);
   position: fixed;
-  display: flex;
+
   align-items: center;
   z-index: var(--Z-INDEX-BASE);
   left: 0;
@@ -17,7 +19,6 @@
     padding: 0;
     height: 260px;
     width: 260px;
-  
   }
 
   nav {
@@ -33,6 +34,7 @@
       display: flex;
 
       li {
+        cursor: pointer;
         display: inline-block;
         margin-left: 0.5em;
         font-size: 1.1em;

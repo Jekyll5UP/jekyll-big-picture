@@ -1,17 +1,17 @@
 {% comment %}
- id: head
+ id: gallery
  type: partial
  version: 11.11.11
 {% endcomment %}
 
-{% assign @works = site.data.works %}
+{% assign @galleries = site.data.galleries %}
 
-{% assign work_source = page.work.source %}
+{% assign gallery_source = page.gallery.source %}
 
-{% if work_source != null %}
- {% assign PARAMS = @works[work_source] %}
+{% if gallery_source != null %}
+ {% assign PARAMS = @galleries[gallery_source] %}
  {% else %}
- {% assign PARAMS = page.work.data %}
+ {% assign PARAMS = page.gallery.data %}
 {% endif %}
 
 <section id="work" class="main style3 primary">

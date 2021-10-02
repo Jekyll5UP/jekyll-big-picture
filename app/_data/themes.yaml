@@ -1,11 +1,8 @@
 animations:
  default: 
   animXYZ: 
-   header: 
-    navigation: stagger-7 fade
   hover: 
-   header: 
-    navigation: 
-   
-   footer: grow-shadow
+   headings:
+    primary: sweep-to-top
+
 styles: 

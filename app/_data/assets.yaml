@@ -14,9 +14,6 @@ prescripts:
   - ns: externals
     basePath: https://
     resources:
-      - code.jquery.com/jquery-3.5.1.slim.min.js
-      - cdn.jsdelivr.net/npm/tsparticles
-      - cdn.jsdelivr.net/npm/jquery-particles
 
 postscripts:
   - ns: big-picture
@@ -34,7 +31,7 @@ postscripts:
   - ns: controllers
     basePath: /assets/scripts/modules/controllers/
     resources:
-      - main.js
+   #   - main.js
 
 webfonts:
   - ns: google webfonts

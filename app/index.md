@@ -14,6 +14,9 @@ work:
 
 stories:
   source: home
+
+contact:
+  source: home
 ---
 
 {% assign intro = "intro/_index.html" %}

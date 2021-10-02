@@ -1,19 +1,43 @@
-<!-- Contact -->
+{% comment %}
+ id: contact
+ type: partial
+ version: 11.11.11
+{% endcomment %}
+
+{% assign @contacts = site.data.contacts %}
+{% assign contact_source = page.contact.source %}
+
+{% if contact_source != null %}
+ {% assign PARAMS = @contacts[contact_source] %}
+ {% else %}
+  {% assign PARAMS = page.contact.data %}
+{% endif %}
+
+
 <section id="contact" class="main style3 secondary">
   <div class="content">
+
+    {% assign @header = PARAMS.header %}
     <header>
-      <h2>Say Hello.</h2>
-      <p>
-        Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore
-        condimentum.
-      </p>
+      <h2>{{ header.title }}</h2>
+      <p>{{ header.content }}</p>
     </header>
+
+    {% assign @form = PARAMS.form %}
     <div class="box">
-      <form method="post" action="#">
+      <form method="{{ @form.meta.method }}" action="{{ form.meta.action }}">
+        
+        {% assign @fields = @form.fields %}
+
         <div class="fields">
+          
+          {% for field in @fields %}
+
           <div class="field half">
             <input type="text" name="name" placeholder="Name" />
           </div>
+
+           {% endfor %}
           <div class="field half">
             <input type="email" name="email" placeholder="Email" />
           </div>
