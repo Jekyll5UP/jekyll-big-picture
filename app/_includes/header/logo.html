@@ -1,1 +1,12 @@
-<img class="logo" src="{{ logoSource }}"/>
+{% assign @headers = site.data.headers %}
+{% assign header_source = page.header.source %}
+
+{% if header_source != null %}
+ {% assign PARAMS = @headers[header_source] %}
+ {% else %}
+  {% assign PARAMS = page.header.data %}
+{% endif %}
+
+{% assign logo_source = PARAMS.logo.source %}
+
+<img class="logo" src="{{ logo_source }}"/>

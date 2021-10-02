@@ -2,11 +2,14 @@
   @include vendor("display", "flex");
   @include vendor("align-items", "center");
   @include vendor("justify-content", "space-between");
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left:0; 
+  width: 100%;
   margin: 0;
-  height: 30%;
+  height: 25%;
   line-height: 1.5em;
-  padding: 3.5em;
+  padding: 2.2em;
   background: _palette(accent3, bg);
   color: var(--COLOR-TEXT);
   overflow: hidden;
@@ -37,8 +40,6 @@
   @include breakpoint("<=medium") {
     @include vendor("flex-direction", "column");
     @include vendor("justify-content", "center");
-    line-height: 1.5em;
-    height: 30%;
 
     }
   }

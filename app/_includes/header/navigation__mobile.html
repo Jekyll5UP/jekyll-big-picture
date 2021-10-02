@@ -14,19 +14,20 @@
   {% assign PARAMS = page.header.data %}
 {% endif %}
 
-<div class="dropdown hide">
+<div class="dropdown {{ include.responsive }}">
   <div class="btn-group">
     <a href="#" class="btn">{{ include.name }}</a>
     <a href="#" class="btn dropdown-toggle" tabindex="0">
-      <i class="icon icon-caret"></i>
+      <i class="">&</i>
     </a>
 
     <ul class="menu">
 
-      {% assign navigation = PARAMS.navigation %}
-      {% for link in navigation.links %}
+      {% assign @navigation = PARAMS.navigation %}
+      
+      {% for link in @navigation.links %}
       <li>
-        <a href="{{ link.href }}"><{{ link.name }}/a>
+        <a href="{{ link.href }}">{{ link.name }}</a>
       </li>
       {% endfor %}
     </ul>

@@ -1,37 +1,40 @@
 {% comment %}
- id: head
- type: partial
+ id: stories
+ type: component
  version: 11.11.11
 {% endcomment %}
 
-{% assign @ones = site.data.ones %}
+{% assign @stories = site.data.stories %}
 
-{% assign one_source = page.one.source %}
+{% assign stories_source = page.stories.source %}
 
-{% if one_source != null %}
- {% assign PARAMS = @ones[one_source] %}
+{% if stories_source != null %}
+ {% assign PARAMS = @stories[stories_source] %}
  {% else %}
- {% assign PARAMS = page.one.data %}
+ {% assign PARAMS = page.stories.data %}
 {% endif %}
 
 
+{% assign @stories = PARAMS.stories %}
 
-<section class="main style2 right fullscreen">
+
+{% for story in @stories %}
+<section id="stories" class="main style2 {{ story.direction }} fullscreen">
   <div class="content box style2">
 
-    {% assign header = PARAMS.header %}
+    {% assign header = story.header %}
 
     <header>
       <h2>{{ header.title }}</h2>
     </header>
 
-    {% assign body = PARAMS.body %}
+    {% assign body = story.body %}
 
     <p>{{ body.content }}</p>
 
   </div>
   
-   {% assign footer = PARAMS.footer %}
+   {% assign footer = story.footer %}
 
   <footer>
     {% for action in footer.actions %}
@@ -40,3 +43,4 @@
   </footer>
   
 </section>
+{% endfor %}

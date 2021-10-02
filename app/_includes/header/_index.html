@@ -4,10 +4,12 @@
  version: 11.11.11
 {% endcomment %}
 
+{% assign logo = "header/logo.html" %}
+{% assign navigation = "header/navigation.html" %}
+
 {% assign mobile_menu = "header/mobile-menu.html" %}
 
 {% assign @headers = site.data.headers %}
-
 {% assign header_source = page.header.source %}
 
 {% if header_source != null %}
@@ -16,22 +18,8 @@
   {% assign PARAMS = page.header.data %}
 {% endif %}
 
-{% assign logoSource = PARAMS.logo.source %}
-{% assign navigation = PARAMS.navigation %}
 
-<header id="header">
-   
- <img class="logo" src="{{ logoSource }}"/>
-  
- <nav class="navigation">
-   <ul>
-    {% for link in navigation.links %}
-      <li>
-        <a href="{{ link.href }}">{{ link.name }}</a>
-      </li>
-    {% endfor %}
-    </ul>
-  </nav>
- 
-</div>
+<header id="header"> 
+ {% include {{ logo }} %}
+ {% include {{ navigation }} responsive="hide-md hide-sm hide-xs" %}
 </header>

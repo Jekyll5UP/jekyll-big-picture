@@ -1,0 +1,37 @@
+home:
+  stories:
+    - id:
+      direction: right
+      header:
+        title: Air
+      body:
+        content:
+      footer:
+        actions:
+
+    - id:
+      direction: left
+      header:
+        title: Fire
+      body:
+        content:
+      footer:
+        actions:
+
+    - id:
+      direction: left
+      header:
+        title: Fire
+      body:
+        content:
+      footer:
+        actions:
+
+    - id: water
+      direction: left
+      header:
+        title: Water
+      body:
+        content:
+      footer:
+        actions:

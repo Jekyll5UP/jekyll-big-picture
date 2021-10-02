@@ -1,9 +1,30 @@
+
+{% assign __mobile__ = "header/navigation__mobile.html" %}
+
+
+{% assign @headers = site.data.headers %}
+{% assign header_source = page.header.source %}
+
+{% if header_source != null %}
+ {% assign PARAMS = @headers[header_source] %}
+ {% else %}
+  {% assign PARAMS = page.header.data %}
+{% endif %}
+
+
+{% assign @navigation = PARAMS.navigation %}
+{% include {{ __mobile__ }} responsive="hide show-xs show-sm show-md" name='@' %}
+
 <nav class="navigation">
-  <ul>
-    {% for link in navigation.links %}
+
+
+  <ul class="{{ include.responsive }}">
+    {% for link in @navigation.links %}
     <li>
       <a href="{{ link.href }}">{{ link.name }}</a>
     </li>
     {% endfor %}
   </ul>
+
+
 </nav>

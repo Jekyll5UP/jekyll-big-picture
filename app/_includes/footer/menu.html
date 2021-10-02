@@ -1,10 +1,12 @@
 
-{% assign @footers = site.data.footers %}
+{% assign @footer = site.data.meta.footer %}
 
-{% assign menu_source = page.footer.source %}
+{% assign @menu = @footer.menu %}
 
 
 <ul class="menu">
-    <li>&copy; Jeff Desire</li>
-  </ul>
+ {% for item in @menu.items %}
+  <li>{{ item }}</li>
+ {% endfor %}
+</ul>
   

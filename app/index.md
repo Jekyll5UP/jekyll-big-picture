@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: page
+permalink: /
 
 header:
   source: home
@@ -9,15 +10,18 @@ intro:
   source: home
 
 work:
- source: home
+  source: home
+
+stories:
+  source: home
 ---
 
 {% assign intro = "intro/_index.html" %}
-{% assign story = "story/_index.html" %}
+{% assign stories = "stories/_index.html" %}
 {% assign gallery = "gallery/_index.html" %}
 {% assign contact = "contact/_index.html" %}
 
 {% include {{ intro }} %}
-{% include {{ story }} %}
+{% include {{ stories }} %}
 {% include {{ gallery }} %}
 {% include {{ contact }} %}
