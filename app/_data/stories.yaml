@@ -2,17 +2,19 @@ home:
   stories:
     - id:
       direction: right
+      backgroundImage: /assets/images/fire.png
       header:
-        title: Air
+        title: Fire
       body:
-        content:
+        content: The really hot one...
       footer:
         actions:
 
     - id:
       direction: left
+      backgroundImage: /assets/images/water.png
       header:
-        title: Fire
+        title: Water
       body:
         content:
       footer:
@@ -20,15 +22,17 @@ home:
 
     - id:
       direction: right
+      backgroundImage: /assets/images/air.png
       header:
-        title: Fire
+        title: Air
       body:
         content:
       footer:
         actions:
 
-    - id: water
+    - id: Earth
       direction: left
+      backgroundImage: /assets/images/earth.png
       header:
         title: Water
       body:

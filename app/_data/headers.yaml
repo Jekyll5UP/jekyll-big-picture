@@ -4,14 +4,14 @@ home:
     source: /assets/images/logo.png
   navigation:
     links:
-
       - name: Intro
         href: "#intro"
 
-      - name: Stories
-        href: "#stories"
+      - name: Story
+        href: "#story"
 
       - name: Gallery
+        href: "#gallery"
 
       - name: Contact
         href: "#contact"
@@ -21,5 +21,3 @@ home:
 
       - name: Docs
         href: /docs/
-        
-      - name: About

@@ -19,15 +19,18 @@
 
 
 {% for story in @stories %}
+
+{% assign bgImage = story.backgroundImage %}
+
 <section
   style="
-    background-image: url('/assets/images/bg.png');
+    background-image: url('{{ bgImage }}');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed fixed;
     background-size: cover;
   "
-  id="stories"
+  id="story"
   class="main style2 {{ story.direction }} fullscreen"
 >
   <div class="content box style2">
