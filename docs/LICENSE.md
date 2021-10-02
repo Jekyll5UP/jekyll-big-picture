@@ -1,9 +1,9 @@
 <h2>📜 License</h2>
 
 <details>
- <summary>**This project is under the MIT license. ☂️</summary>
-    
-    Copyright (c) 2021 Jffrydsr.tech*
+ <summary><b>This project is under the MIT license.</b> ☂️</summary>
+    <code>
+    Copyright (c) 2021 Jffrydsr.tech
     
     Permission is hereby granted, free of charge, to any person obtaining a copy
     
@@ -34,5 +34,5 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     
     SOFTWARE.
-
+   </code>
 </details>

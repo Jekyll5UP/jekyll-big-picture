@@ -1,18 +1,19 @@
 <!-- ⚠️ This README has been generated from the file(s) "SCHEMA.md" ⚠️--><h1>jekyll-big-picture</h1>
-<img src="https://github.com/Jekyll5UP/jekyll-big-picture/blob/main/docs/logo.png"/>
+<img height="120px" width="120px"src="https://github.com/Jekyll5UP/jekyll-big-picture/blob/main/docs/logo.png"/>
 <h2>TL;DR</h2>
 
 **a landing-page-story styled, MVC-architecture ready, Jekyll template designed by @html5up "Editorial".**
+<h2>📸 Screenshots</h2>
 <h2>Features</h2>
 <h2>Installation</h2>
 <h2>Usage</h2>
-<h2>Versions</h2>
+<h2>📄 Versions</h2>
 <h2>📜 License</h2>
 
 <details>
- <summary>**This project is under the MIT license. ☂️</summary>
-    
-    Copyright c 2021 Jffrydsr.tech*
+ <summary><b>This project is under the MIT license.</b> ☂️</summary>
+    <code>
+    Copyright c 2021 Jffrydsr.tech
     
     Permission is hereby granted, free of charge, to any person obtaining a copy
     
@@ -43,5 +44,5 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     
     SOFTWARE.
-
+   </code>
 </details>
