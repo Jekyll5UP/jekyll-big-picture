@@ -5,6 +5,7 @@
   overflow-x: hidden;
 
   > .content {
+    border-radius: 10px;
     color: var(--COLOR-TEXT);
     width: 45em;
     max-width: calc(100% - 4em);

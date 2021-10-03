@@ -6,5 +6,5 @@
 - **Svelte-powered component & controller pattern**
 - **TSParticles Plugin**
 - **Jekyll Utility Gems**
-- [**Forestry.io](http://Forestry.io) Compatiable**
+- [Forestry.io](http://Forestry.io) Compatiable
 - **Containerized**

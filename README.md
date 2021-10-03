@@ -1,6 +1,6 @@
 <!-- ⚠️ This README has been generated from the file(s) "SCHEMA.md" ⚠️--><h1>jekyll-big-picture</h1>
 <img height="320px" width="320px" src="https://github.com/Jekyll5UP/jekyll-big-picture/blob/main/docs/logo.png"/>
-<h2>TL;DR</h2>
+<h2>🖇 TL;DR</h2>
 
 **a landing-page-story styled, MVC-architecture ready, Jekyll template designed by @html5up "Editorial".**
 <h2>📸 Screenshots</h2>
@@ -12,7 +12,7 @@
 - **Svelte-powered component & controller pattern**
 - **TSParticles Plugin**
 - **Jekyll Utility Gems**
-- [**Forestry.io](http://Forestry.io) Compatiable**
+- [Forestry.io](http://Forestry.io) Compatiable
 - **Containerized**
 <h2>🌲 File Tree</h2>
 
@@ -70,7 +70,7 @@ gulp bootstrap
 <h2>🔨 Usage</h2>
 
 <details>
- <summary><b></b></summary>
+ <summary><b>Configuration</b></summary>
  </details>
 <h2>📄 Versions</h2>
 
